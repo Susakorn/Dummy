@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1e7ed;
+}
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #f0cbe0;
+} 
+
+.logo img {
+    padding: 15px;
+    height: 90px;
+    /* margin-left: 20px; */
+    margin-top: 10px;
+    padding-right: 100px;
+    cursor: url(./cat.png), auto;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0 30px;
+    font-weight: bold;
+    color: black;
+} 
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin-top: 10px;
+    color: #000000;
+    font-size: larger;
+    transition: color 2s ease;
+    cursor: url(./cat.png), auto; /* ใช้รูป cursor */
+}
+
+.menu li a:hover {
+    background-color: hsl(330, 85%, 64%);
+    border-radius: 25px;
+    color: #cbe7ce;
+    font-weight: bolder;
+    transition: color 1s ease, background-color 1s ease;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.contact li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.contact li a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.main-head {
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+.word {
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;  
+}
+
+h1 {
+    margin: 20px 0;
+    z-index: 1;
+    animation: fadeIn 2s ease-in-out, slideIn 1.5s ease-out; /* อนิเมชัน */
+}
+
+
+
+
+.smail {
+    margin-top: 20px;
+    text-indent: 30px;
+    z-index: 1;
+    animation: fadeIn 3s ease-in-out, slideIn 2s ease-out; /* อนิเมชัน */
+}
+
+.im img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
+    position: relative;
+    top: -100px;
+    left: 100px;
+    box-shadow: #273f2a;
+}
+
+.emote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+    background-color: #f0cbe0;
+}
+
+/* อนิเมชัน */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
